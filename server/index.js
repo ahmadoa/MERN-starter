@@ -6,6 +6,10 @@ const UserModel = require("./models/Users");
 const mongoose = require("mongoose");
 require("dotenv").config();
 
+// allows us to conect this api with frontend
+const cors = require("cors");
+app.use(cors());
+
 app.use(express.json());
 // connecting to db
 // listening to port
